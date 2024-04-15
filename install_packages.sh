@@ -18,10 +18,12 @@ apt_packages=(
     # Fun stuff
     cowsay
     fortune
-    # Hacking/CTF stuff
+    # Hacking/CTF
     nmap
     ffuf
     gobuster
+    # Util
+    brightnessctl
 )
 
 snap_packages=(
