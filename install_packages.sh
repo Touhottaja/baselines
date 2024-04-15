@@ -49,3 +49,4 @@ sudo apt upgrade -y
 install_packages_apt
 install_packages_snap
 
+sudo apt autoremove -y
