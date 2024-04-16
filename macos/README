@@ -1,0 +1,33 @@
+# MacOS baseline
+i3wm-like configuration for MacOS.
+
+## Steps
+1. Install `yabai`, `skhd`, and `spacebar` using `brew`
+```sh
+$ brew install yabai
+$ brew install skhd
+$ brew install spacebar
+```
+
+2. Create folders under `.config`
+```sh
+$ cd ~/.config
+$ mkdir yabai
+$ mkdir skhd
+$ mkdir spacebar
+
+```
+3. Move the configuration files under the correct folders
+```sh
+$ cp yabairc ~/.config/yabai/
+$ cp skhdrc ~/.config/skhd/
+$ cp spacebarrc ~/.config/spacebar/
+```
+
+4. Start the services
+```
+$ yabai --start-service
+$ skhd --start-service
+$ brew services start spacebar
+```
+
