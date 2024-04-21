@@ -4,22 +4,22 @@ general {
         interval = 1
 }
 
+order += "cpu_temperature 0"
 order += "load"
 order += "disk /"
 order += "memory"
 #order += "run_watch DHCP"
 #order += "run_watch VPNC"
-order += "ipv6"
-order += "path_exists VPN"
-order += "wireless wlan0"
+#order += "ipv6"
+#order += "path_exists VPN"
+order += "wireless wlp110s0"
 order += "ethernet eth0"
 order += "battery 0"
 order += "volume master"
-#order += "cpu_temperature 0"
 #order += "tztime local"
 order += "tztime helsinki"
 
-wireless wlan0 {
+wireless wlp110s0 {
         format_up = "W: (%quality at %essid, %bitrate) %ip"
         format_down = "W: down"
 }
@@ -94,3 +94,8 @@ volume master {
         mixer = "Master"
         mixer_idx = 0
 }
+
+cpu_temperature 0{
+	format = "CPU: %degrees °C"
+}
+
