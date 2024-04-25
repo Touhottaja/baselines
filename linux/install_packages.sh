@@ -24,6 +24,7 @@ apt_packages=(
     gobuster
     # Util
     brightnessctl
+    htop
 )
 
 snap_packages=(
